@@ -1,6 +1,6 @@
 var n1 = 5
 var n2 = 8.5
-var n3 = 
+var n3 = 15
 
 /* n1, n2 e n3, são identificadores. Podem começar com letra, $ ou _
 Não podem começar com números, conter espaços e usar palavras reservadas (palavras usadas para comandos como : function, var, alert...)
