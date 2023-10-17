@@ -7,13 +7,30 @@ window = abre uma janela ao carregar o site
 .confirm() = da a opção de confirmar (ok) ou cancelar.
 
 .prompt() = Aparece um campo para inserir dados.
--------------------------
-
-Aula 05
 
 Inserindo comentários:
 
 // = Comentários na mesma linha
 
 /* */ = Comentários em mais de uma linha.
+-------------------------
 
+Aula 05 - Variável
+
+Sinal de igual '=' quer dizer 'recebe'
+
+variável > var
+    Exemplo:
+    var n1 = 5
+    var n2 = 8.5
+    var n3 = 15
+
+Podemos usar "" e '' e ``
+
+n1, n2 e n3, são identificadores. Podem começar com letra, $ ou _
+Não podem começar com números, conter espaços e usar palavras reservadas (palavras usadas para comandos como : function, var, alert...)
+
+
+Variáveis servem para guardar dados. Number(números), string(cadeia de caracteres, como nome, telefone, cpf...) e boolean (True(verdadeiro) or False(falso))
+
+O comando 'typeof' mostra o tipo de variável.
