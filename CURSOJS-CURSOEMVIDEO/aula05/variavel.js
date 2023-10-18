@@ -12,6 +12,6 @@ Não podem começar com números, conter espaços e usar palavras reservadas (pa
 
 var s1 = "JavaScript"
 var s2 = 'Curso em Vídeo'
-var s3 = `Guanara`
+var s3 = `Guanabara`
 
 //Podemos usar "" e '' e ``
