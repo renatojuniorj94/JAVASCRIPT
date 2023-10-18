@@ -34,3 +34,7 @@ Não podem começar com números, conter espaços e usar palavras reservadas (pa
 Variáveis servem para guardar dados. Number(números), string(cadeia de caracteres, como nome, telefone, cpf...) e boolean (True(verdadeiro) or False(falso))
 
 O comando 'typeof' mostra o tipo de variável.
+----------------FIM-----------------
+
+Aula 06 - Tratamento de dados
+
