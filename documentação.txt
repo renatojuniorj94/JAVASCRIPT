@@ -76,7 +76,7 @@ Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos 
 
 Aula 07 - Operadores
 
-Os operadores que vamos estudar são:
+Os operadores que vamos estudar são (A ordem já indica a hierarquia dos operadores):
 - Aritméticos
     + Soma
     - Subtração
@@ -97,5 +97,18 @@ Ordens de precedência dos operadores aritméticos:
     Depois > n += 3
             6
 - Relacionais
+    Os operadores relacionais retornam resultados booleanos (True or False). Quando houver operadores relacionais e aritméticos na mesma linha, pela hierarquia, os artméticos vem primeiro.
+    > Maior
+    < Menor
+    >= Maior/igual
+    <= Menor/igual
+    == Igual
+    === Idêntico
+    != Diferente
 - Lógicos
+    ! Negação
+    && Conjunção
+    || Disjunção
 - Ternário
+    ?
+    :
