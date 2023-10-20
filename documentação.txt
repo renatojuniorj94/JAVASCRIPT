@@ -71,3 +71,31 @@ ex004---
 .toFixed(2) > nesse caso colocamos a variável terminando com duas casas decimais > 1545.5 vai terminar 1545.50
 Se quisermos trocar '.' por ',' colocamos > .replace('.',',')
 Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos o seguinte comando > .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ou usd/euro.
+
+-----------------FIM------------------
+
+Aula 07 - Operadores
+
+Os operadores que vamos estudar são:
+- Aritméticos
+    + Soma
+    - Subtração
+    * Multiplicação
+    / Divisão
+    % Resto da divisão inteira (Exemplo: 5 dividido por 2. O resultado é 2 e sobra 1 na divisão inteira)
+    ** Potência (Exemplo: 5 ** 2 = 25)
+Ordens de precedência dos operadores aritméticos:
+    ()
+    **
+    * / %
+    + -
+- Atribuição
+    Simplificando atribuições:
+    Antes > var n = 3
+            n = n + 3
+            6
+    Depois > n += 3
+            6
+- Relacionais
+- Lógicos
+- Ternário
