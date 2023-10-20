@@ -38,3 +38,36 @@ O comando 'typeof' mostra o tipo de variável.
 
 Aula 06 - Tratamento de dados
 
+ex002---
+var nome = window.prompt('Qual é o seu nome?')
+    (var nome > guarda o nome que será escrito.)
+
+window.alert ('É um grande prazer te conhecer, ' + nome + '!')
+    +  > é o que chamamos de concatenação (concatenação é quando juntamos strings.)
+
+fim ex002---
+
+ex003---
+var n1 = window.prompt('Digite um número: ')
+    > O número digitado é uma string.
+var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+var s = n1 + n2
+window.alert('O valor da soma é ' + s)
+    > Number.parseInt > Forçamos a conversão de uma string em um número inteiro.
+    > Number.parseFloat > Forçamos a conversão de uma string em um número flutuante (Ex: 5.3).
+    > Se usarmos somente 'Number' ele soma automaticamente números inteiros(Int) e flutuante (Float)
+    Para converter um número(Number) em String basta colocar > String(n) ou n.toString()
+
+window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    Ao usar placeholder ${} temos que usar crase (``)
+
+fim ex003---
+
+ex004---
+.length > conta quantos caracteres tem uma String
+.toUpperCase() > transforma toda a String em letras maiúsculas.
+.toLowerCase() > transforma toda a String em letras minúsculas.
+
+.toFixed(2) > nesse caso colocamos a variável terminando com duas casas decimais > 1545.5 vai terminar 1545.50
+Se quisermos trocar '.' por ',' colocamos > .replace('.',',')
+Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos o seguinte comando > .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ou usd/euro.
