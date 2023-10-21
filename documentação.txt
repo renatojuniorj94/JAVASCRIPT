@@ -74,7 +74,7 @@ Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos 
 
 -----------------FIM------------------
 
-Aula 07 - Operadores
+Aula 07/08 - Operadores
 
 Os operadores que vamos estudar são (A ordem já indica a hierarquia dos operadores):
 - Aritméticos
@@ -84,18 +84,22 @@ Os operadores que vamos estudar são (A ordem já indica a hierarquia dos operad
     / Divisão
     % Resto da divisão inteira (Exemplo: 5 dividido por 2. O resultado é 2 e sobra 1 na divisão inteira)
     ** Potência (Exemplo: 5 ** 2 = 25)
-Ordens de precedência dos operadores aritméticos:
+
+Ordens de precedência dos operadores 
+aritméticos:
     ()
     **
     * / %
     + -
+
 - Atribuição
     Simplificando atribuições:
     Antes > var n = 3
             n = n + 3
             6
     Depois > n += 3
-            6
+            
+            
 - Relacionais
     Os operadores relacionais retornam resultados booleanos (True or False). Quando houver operadores relacionais e aritméticos na mesma linha, pela hierarquia, os artméticos vem primeiro.
     > Maior
@@ -103,12 +107,15 @@ Ordens de precedência dos operadores aritméticos:
     >= Maior/igual
     <= Menor/igual
     == Igual
-    === Idêntico
+    === Idêntico (Mesmo valor e mesmo tipo (String, Number))
     != Diferente
+
 - Lógicos
     ! Negação
     && Conjunção
     || Disjunção
+
 - Ternário
     ?
     :
+----------------FIM-------------------
