@@ -100,7 +100,7 @@ aritméticos:
     Depois > n += 3
             
             
-- Relacionais
+- Relacionais (Não possui hierarquia)
     Os operadores relacionais retornam resultados booleanos (True or False). Quando houver operadores relacionais e aritméticos na mesma linha, pela hierarquia, os artméticos vem primeiro.
     > Maior
     < Menor
@@ -110,12 +110,56 @@ aritméticos:
     === Idêntico (Mesmo valor e mesmo tipo (String, Number))
     != Diferente
 
-- Lógicos
+- Lógicos (Possui hierarquia)
     ! Negação
+        ! true
+            false
+        ! false
+            true
+
     && Conjunção
+        true && true
+        true
+        false && false
+        false
+        false && true
+        false
+        true && false
+        false
+
     || Disjunção
+        true || true
+        true
+        false || false
+        false
+        false || true
+        true
+        true || false
+        
+        Exemplo no node.js :
+        > var idade = 20
+        undefined
+        > var estado = 'mg'
+        undefined
+        > var salario = 5000
+        undefined
+        > var sexo = 'f'
+        undefined
+        >
+        > idade >=15 && idade <=17
+        false
+        > estado == 'rj'|| estado == 'sp'
+        false
+        > salario > 2000 && sexo != 'm'
+        true
+        >
 
 - Ternário
     ?
     :
+
+    Exemplo:
+    var media = 5
+    média >= 7.0 ? "aprovado" : "reprovado"
+    > "reprovado" 
 ----------------FIM-------------------
