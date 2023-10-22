@@ -166,3 +166,18 @@ aritméticos:
 
 Aula 09 - DOM (Document Object Model)
 
+Árvore hierárquica DOM (Parent & Child):
+window >(parent)
+    - location (child window)
+    - Document > (child ...)
+        HTML (Child document) > (parent Head e Body)
+            - Head
+                - Meta
+                - Title
+            - Body
+                - H1
+                - P
+                - P
+                    - Strong
+                - DIV    
+    - History (child ...)
