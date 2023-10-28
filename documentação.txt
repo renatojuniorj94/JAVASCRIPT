@@ -180,4 +180,4 @@ window >(parent)
                 - P
                     - Strong
                 - DIV    
-    - History (child ...)...
+    - History (child ...)
