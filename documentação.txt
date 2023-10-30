@@ -168,7 +168,7 @@ Aula 09 - DOM (Document Object Model)
 
 Árvore hierárquica DOM (Parent & Child):
 window >(parent)
-    - location (child window)
+    - location (child window) - Diz qual a localização do site, url, página atual e anterior.
     - Document > (child ...)
         HTML (Child document) > (parent Head e Body)
             - Head
@@ -180,4 +180,17 @@ window >(parent)
                 - P
                     - Strong
                 - DIV    
-    - History (child ...)
+    - History (child ...) - Guarda o historico do site.
+
+    Todos acima, são elementos. Podemos selecionar esse elementos por:
+    - Marca (TagName)
+        getElementsByTagName()
+    - ID
+        getElementById()
+    - Nome
+        getElementsByName()
+    - Classe
+        getElementsByClassName()
+    - Seletor (método mais recente)
+        querySelector()
+        querySelectorAll()

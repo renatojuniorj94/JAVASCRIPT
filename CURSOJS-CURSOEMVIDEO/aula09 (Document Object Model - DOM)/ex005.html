@@ -14,11 +14,31 @@
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai com resultado</p>
+    <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar  o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        window.document.write()
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] //Selecionando o primeiro parágrafo //Quando 'Element' estiver no plural, é existem mais de 1 elemento para ser selecionado.
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+
+        window.document.write(p1.innerText) //Escrevendo o primeiro parágrafo
+
+        p1.style.color = 'blue' //mudando a cor do primeiro parágrafo
+
+        corpo.style.background = 'black' //Mudando a cor do background da página
+
+        document.write(p2.innerHTML) //Se colocarmos 'innerText', ele vai exibir sem as configurações feitas por HTML e CSS
+
+        //window.alert(p2.innerText)
+
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Olá!' //Comando completo sem criar variável.
+
+        // var d = window.document.querySelector('div#msg')
+        //d.style.background = 'blue'
     </script>
 </body>
 </html>
