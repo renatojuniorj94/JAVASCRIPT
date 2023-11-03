@@ -214,3 +214,8 @@ https://developer.mozilla.org/en-US/docs/Web/Events
 Determinadas funções (function) vão acontecer quando executarmos um bloco de código. Um bloco de código fica entre {}
 
 ---------------FIM-----------------
+
+Aula 11 - Condições (parte 1)
+
+-If
+-Else
