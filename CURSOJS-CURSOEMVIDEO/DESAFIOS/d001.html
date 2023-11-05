@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,18 @@
 
 <body>
     <h1>Cadastro Receita Federal</h1>
-        <input type="text" name="pais" id="pais">
-    <input type="button" value="Verificar" onclick="varificar()">
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
     <script>
+        var pais = document.querySelector(`input#pais`)
+        var res = document.querySelector(`div#res`)
+        var final = (res.value)
         function verificar() {
-        if (país == 'Brasil') {
-            innerHTML += `Vivendo em ${país}`
-            innerHTML += 'Você é Brasileiro!'
-        } else {
-            innerHTML += `Vivendo em ${país}`
-            innerHTML += 'Você é Estrangeiro!'
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro!` 
+            }
         }
-    }
     </script>
 </body>
 
