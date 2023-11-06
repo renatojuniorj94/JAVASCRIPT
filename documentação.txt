@@ -217,5 +217,5 @@ Determinadas funções (function) vão acontecer quando executarmos um bloco de 
 
 Aula 11 - Condições (parte 1)
 
--If
--Else
+-If (Se...)
+-Else (Se não...)

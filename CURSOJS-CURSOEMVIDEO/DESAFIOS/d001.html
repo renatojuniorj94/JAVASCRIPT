@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio 01</title>
 </head>
 
 <body>
@@ -13,12 +13,14 @@
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res"></div>
     <script>
-        var pais = document.querySelector(`input#pais`)
-        var res = document.querySelector(`div#res`)
-        var final = (res.value)
         function verificar() {
-            if (pais == 'Brasil') {
-                res.innerHTML += `<p>Você é Brasileiro!` 
+            var pais = document.querySelector('input#pais').value; // Corrigido por chat GPT
+            var res = document.querySelector('div#res');
+            res.innerHTML = `<p>Seu país é ${pais}.</p>`;
+            if (pais == 'Brasil') { // Corrigido por chatGPT
+                res.innerHTML += '<p>Você é Brasileiro!</p>'; // Corrigido por chatGPT
+            } else {
+                res.innerHTML += '<p>Você é Estrangeiro!</p>'; // Corrigido por chat GPT
             }
         }
     </script>
