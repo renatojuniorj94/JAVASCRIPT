@@ -235,6 +235,8 @@ switch (expressão) {
     break
     case valor 3:
     break
-    
+
     default:
 }
+
+---------------FIM--------------------
