@@ -215,7 +215,26 @@ Determinadas funções (function) vão acontecer quando executarmos um bloco de 
 
 ---------------FIM-----------------
 
-Aula 11 - Condições (parte 1)
+Aula 11/12 - Condições (parte 1/2)
 
--If (Se...)
--Else (Se não...)
+-If (Se...) - Somente If é uma condição simples
+-Else (Se não...) - If > Else é um condição composta
+
+Estrutura:
+if {
+
+} else{
+
+}
+
+Condição múltipla:
+switch (expressão) {
+    case valor 1:
+    break (break é obrigatorio, exceto em default)
+    case valor 2:
+    break
+    case valor 3:
+    break
+    
+    default:
+}
