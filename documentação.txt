@@ -240,3 +240,8 @@ switch (expressão) {
 }
 
 ---------------FIM--------------------
+
+Aula 13 - Repetições
+
+while > Estrutura de repetição com teste lógico no início
+do > Estrura de repetição com teste lógico no final
