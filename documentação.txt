@@ -241,7 +241,11 @@ switch (expressão) {
 
 ---------------FIM--------------------
 
-Aula 13 - Repetições
+Aula 13/14 - Repetições (parte 1/2)
 
 while > Estrutura de repetição com teste lógico no início
 do > Estrura de repetição com teste lógico no final
+for > Estrutura de repetição com variável de controle
+
+No final da aula aprendemos a usar o console de depuração. Link da aula:
+https://www.youtube.com/watch?v=eX-lkN_Zahc&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=24
