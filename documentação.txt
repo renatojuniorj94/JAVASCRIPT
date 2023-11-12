@@ -244,10 +244,29 @@ switch (expressão) {
 Aula 13/14 - Repetições (parte 1/2)
 
 while > Estrutura de repetição com teste lógico no início
+
 do > Estrura de repetição com teste lógico no final
+
 for > Estrutura de repetição com variável de controle
 
 No final da aula aprendemos a usar o console de depuração. Link da aula:
 https://www.youtube.com/watch?v=eX-lkN_Zahc&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=24
 
 ----------------FIM-----------------
+
+Aula 15 - Variáveis compostas (array = vetor)
+
+Variáveis simples só conseguem armazenar um valor por vez.
+Ex: Se uma variável tinha o valor de 5 e depois você atribuiu 8, ela perder o valor de anterior.
+
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura.
+Ex: Diferente do exemplo acima, ela consegue guardar diversos valores.
+
+Array (vetor) é uma variável com varios espaços, e é composto por elementos que, possuí índices/chaves (números identificadores). Dentro do elemento ficam os conteúdos/valores.
+
+Array > Elementos > Índices/chaves > Conteúdos/valores.
+
+link da aula:
+https://www.youtube.com/watch?v=XdkW62tkAgU&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=29
+
+----------------------FIM--------------------
