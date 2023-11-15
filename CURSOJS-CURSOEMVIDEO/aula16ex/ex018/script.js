@@ -7,7 +7,7 @@ function isNumero(n) {
     if (Number(n) >= 1 && Number(n) <= 100) { //Se o número(n) for maior/igual a 1 e número(n) for menor/igual a 100
         return true
     } else {
-    return false
+        return false
     }
 }
 
@@ -20,9 +20,14 @@ function isLista(n, l) {
 }
 
 function adicionar() {
-    if (isNumero(num.value) && !inLista(num.value, valores)) /* Aqui ele avalia se 'num' é um número e se 'num' já está na lista. */ {
-
+    if (isNumero(num.value) && !inLista(num.value, valores)) { /* Aqui ele avalia se 'num' é um número e se 'num' já está na lista. */
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
+    num.value = ''
+    num.focus()
 }
