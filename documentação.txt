@@ -278,6 +278,29 @@ https://www.youtube.com/watch?v=mc3TKp2XzhI&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl
 
 ------------------FIM-----------------
 
+Aula 17 - Encerramento
+
+Aprendizado no curso básico de JavaScript:
+
+-Fundamentos
+-Variáveis e dados
+-Operadores
+-Condições
+-Repetições
+-Arrays
+-Functions
+-DOM
+
+Proxímos passos:
+- Continuar estudando Functions
+-Objetos (POO)
+-Modularização
+-RegEx (Expressões regulares)
+-JSON
+-Ajax
+-NodeJS
+-
+
 Claro, vou explicar cada linha do código que você compartilhou:
 
 ```javascript
@@ -340,3 +363,29 @@ function adicionar() {
 5. `num.focus()`: Coloca o foco de volta no input para facilitar a inserção de novos valores.
 
 Código explicado linha a linha pelo chatGPT (Ex018 - aula 16)
+
+-----------------------------------------------------
+
+Claro, vamos analisar linha por linha:
+
+1. `let num = document.querySelector('input#fnum')`: Esta linha seleciona um elemento HTML usando `document.querySelector`. Procura um elemento `input` com o ID `fnum` e armazena-o na variável `num`.
+   
+2. `let lista = document.querySelector('select#flista')`: Similar à linha anterior, essa linha seleciona um elemento HTML, mas desta vez procura um elemento `select` com o ID `flista` e o armazena na variável `lista`.
+
+3. `let res = document.querySelector('div#res')`: Novamente, seleciona um elemento HTML, buscando uma `div` com o ID `res` e armazenando-o na variável `res`.
+
+4. `let valores = []`: Aqui é criado um array vazio chamado `valores`. Esse array será usado para armazenar números posteriormente.
+
+Agora, passando para as funções:
+
+5. `function isNumero(n) { ... }`: Esta função chamada `isNumero` recebe um argumento `n`. Ela verifica se o valor `n` é um número entre 1 e 100, retornando `true` se for e `false` caso contrário.
+
+6. `function isLista(n, l) { ... }`: Essa função `isLista` verifica se um número `n` já está presente em uma lista `l`. Ela usa `l.indexOf(Number(n))` para verificar se o número está na lista. Retorna `true` se o número estiver na lista e `false` caso contrário.
+
+Agora, as funções `adicionar` e `finalizar`:
+
+7. `function adicionar() { ... }`: Esta função é chamada quando um evento ocorre (por exemplo, um clique em um botão). Ela verifica se o número no input (`num.value`) é válido e não está na lista `valores`, e o adiciona à lista de valores e ao elemento `select` (`lista`). Caso contrário, exibe um alerta e limpa o input, focando nele novamente para uma nova entrada.
+
+8. `function finalizar() { ... }`: Esta função é acionada quando um evento (provavelmente um clique em um botão "Finalizar") ocorre. Ela realiza cálculos estatísticos com os valores armazenados em `valores`, como o total de números, o maior, o menor, a soma e a média. Em seguida, atualiza o conteúdo da div `res` com esses cálculos para exibição na página.
+
+Essencialmente, esse código é um sistema simples para adicionar números a uma lista e, ao finalizar, calcular algumas estatísticas básicas sobre esses números.
