@@ -277,3 +277,66 @@ Link da aula:
 https://www.youtube.com/watch?v=mc3TKp2XzhI&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=30
 
 ------------------FIM-----------------
+
+Claro, vou explicar cada linha do código que você compartilhou:
+
+```javascript
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+```
+
+1. `let num = document.querySelector('input#fnum')`: Isso procura um elemento HTML com o ID `fnum` que é um input e o armazena na variável `num`.
+2. `let lista = document.querySelector('select#flista')`: Isso procura um elemento HTML com o ID `flista` que é um select e o armazena na variável `lista`.
+3. `let res = document.querySelector('div#res')`: Isso procura um elemento HTML com o ID `res` que é uma div e o armazena na variável `res`.
+4. `let valores = []`: Isso cria um array vazio chamado `valores`, que será usado posteriormente para armazenar valores.
+
+```javascript
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
+    }
+}
+```
+
+1. `function isNumero(n) { ... }`: Esta é a definição de uma função chamada `isNumero` que recebe um parâmetro `n`.
+2. `if (Number(n) >= 1 && Number(n) <= 100) { return true } else { return false }`: Esta função verifica se o número recebido (`n`) é maior ou igual a 1 e menor ou igual a 100. Se for, retorna `true`; caso contrário, retorna `false`.
+
+```javascript
+function isLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+```
+
+1. `function isLista(n, l) { ... }`: Esta é a definição de uma função chamada `isLista` que recebe dois parâmetros: `n` (um número) e `l` (uma lista).
+2. `if (l.indexOf(Number(n)) != -1) { return true } else { return false }`: Esta função verifica se o número `n` está presente na lista `l`. Se estiver, retorna `true`; caso contrário, retorna `false`.
+
+```javascript
+function adicionar() {
+    if (isNumero(num.value) && !isLista(num.value, valores)) {
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
+    } else {
+        window.alert('Valor inválido ou já encontrado na lista.')
+    }
+    num.value = ''
+    num.focus()
+}
+```
+
+1. `function adicionar() { ... }`: Esta função é executada quando alguma ação (como um clique em um botão) acontece.
+2. `if (isNumero(num.value) && !isLista(num.value, valores)) { ... } else { ... }`: Verifica se o valor do input (`num.value`) é um número válido (usando a função `isNumero`) e se não está na lista (`valores`) usando a função `isLista`. Se for um número válido e não estiver na lista, ele adiciona o valor à lista `valores` e cria um novo elemento `option` no elemento `select` (`lista`).
+3. Se o valor não for válido ou já estiver na lista, exibe um alerta.
+4. `num.value = ''`: Limpa o valor do input.
+5. `num.focus()`: Coloca o foco de volta no input para facilitar a inserção de novos valores.
+
+Código explicado linha a linha pelo chatGPT (Ex018 - aula 16)
