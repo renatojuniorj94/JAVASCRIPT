@@ -1,0 +1,16 @@
+Aula 2 - Tipos de saída
+
+1- document.getElementById('texto').innerHTML=""
+    *Para interação com a página.
+
+2 - document.write('Escrito com document.write')
+    *Usado para testes.
+
+3 - alert("")
+    *Emite um alerta ao carregar a página.
+
+4 - console.log('')
+    *Usado para saídas em terminais(console).
+
+--------------------FIM----------------------
+
