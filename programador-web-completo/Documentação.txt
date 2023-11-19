@@ -12,5 +12,5 @@ Aula 2 - Tipos de saída
 4 - console.log('')
     *Usado para saídas em terminais(console).
 
------------------FIM-------------------
+----------------FIM------------------
 
