@@ -22,3 +22,22 @@ Aula 3 - Declarações
 
 Aula 4 - Sintaxe
 
+Aprendemos a nomear variáveis.
+
+Camel case = var/let/const primeiroNome = 
+Ou com underline
+var/let/const primeiro_nome = 
+Podemos começar também com $
+
+----------------FIM--------------
+
+Aula 6 - Variaáveis > Var / Let / Const
+
+
+let (Usamos para praticamente tudo) > Uma vez declarada, ela não pode ser alterada. Exceto em diferentes blocos de códigos.
+
+var > Pode ser redefinido.
+
+Const > Uma vez declarado, não pode ser alterado e também não pode receber o mesmo nome dentro de outros blocos de códigos. 
+
+Não pode começar com número, conter espaços e símbolos ou palavras reservadas.
