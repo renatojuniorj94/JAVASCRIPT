@@ -41,3 +41,30 @@ var > Pode ser redefinido.
 Const > Uma vez declarado, não pode ser alterado e também não pode receber o mesmo nome dentro de outros blocos de códigos. 
 
 Não pode começar com número, conter espaços e símbolos ou palavras reservadas.
+
+------------------FIM--------------------
+
+Aula 7 - Operadores
+
++ - * / = ++ -- += -= && || etc...
+
+São separados em 6 categorias:
+
+1 - Operadores Aritméticos (matemáticos)
+2 - Operadores de atribuição
+3 - Operadores de sequência
+4 - Operadores de comparação:
+    == > Iguais 
+    === > Idênticos 
+    != Diferente
+    !== Verifica se valor e tipo são diferentes
+    < Menor
+    > Maior
+    <= Menor/igual
+    >= Maior/igual
+5 - Operador condicional (ternário)
+    ? :
+6 - Operadores lógicos
+    && > E
+    || > Ou
+    ! > Negação
