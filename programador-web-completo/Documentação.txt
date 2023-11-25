@@ -68,3 +68,5 @@ São separados em 6 categorias:
     && > E
     || > Ou
     ! > Negação
+
+-----------------------FIM-----------------------
