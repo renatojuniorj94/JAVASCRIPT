@@ -70,3 +70,21 @@ São separados em 6 categorias:
     ! > Negação
 
 -----------------------FIM-----------------------
+
+Aula 9 - Objetos
+
+Definindo um objeto:
+
+const carro = {marca: "toyota", modelo: "etios", ano:2018, placa:"ABC-1234"}
+
+ou
+
+const carro = {marca: "toyota",
+     modelo: "etios",
+     ano:2018,
+     placa:"ABC-1234"
+} 
+
+Para deixar mais organizado.
+
+Geralmente em objetos, usamos a variável "const".
