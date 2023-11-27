@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .divStyle {
+            margin: auto;
+            width: 80%;
+            height: 200px;
+            background-color: blue;
+
+        }
+    </style>
+    <title>Aprendendo JS</title>
+</head>
+
+<body>
+    <h1>Aprendendo JavaScript</h1>
+
+    <p id="texto"></p>
+
+    <p><button onclick="eventoClick()">Clique aqui</button></p>
+    
+    <p><button ondblclick="eventoDblClick()">Evento de clique duplo</button></p>
+
+    <div class="divStyle" id="teste" onmouseover="viraVermelho()" onmouseout="viraAzul()" onmousemove="adicionaTexto()"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

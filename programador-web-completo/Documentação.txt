@@ -88,3 +88,23 @@ const carro = {marca: "toyota",
 Para deixar mais organizado.
 
 Geralmente em objetos, usamos a variável "const".
+
+------------------FIM---------------------
+
+Aula 10 - Eventos
+
+onclick - Disparado quando recebe um click
+ondblckick - Disparado com clique duplo
+onmouseover - Disparado quando mouse está sobre
+onmouseout - Disparado quando o mouse é movido para fora do elemento
+onmousemove - Disparado quando o mouse é movido para o elemento
+onmousedown - Disparado quando o clique do botão foi pressionado
+onmouseup - Disparado quando o clique do botão é liberado
+onfocus - Disparado quando o elemento recebe o foco. Válido para input *(Pesquisar sobre)
+onchange - Disparado quando existe uma mudança no conteúdo
+onblur - Disparado quando o elemento perde o foco
+onkeydown - Disparado quando uma tecla é pressionada
+onkeypress - Disparado quando uma tecla é pressionada e solta
+onkeyup - Disparado quando uma tecla é solta sobre um elemento
+onload - Disparado quando a página terminou de ser carregada. Body
+onresize - Disparado quando há um redimencionamento da janela
