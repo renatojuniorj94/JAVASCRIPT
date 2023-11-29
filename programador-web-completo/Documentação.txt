@@ -109,6 +109,6 @@ onkeyup - Disparado quando uma tecla é solta sobre um elemento
 onload - Disparado quando a página terminou de ser carregada. Body
 onresize - Disparado quando há um redimencionamento da janela
 
-***Paramos com 12:09 de aula**
+No evento 'onfocus' ao tentar emitir um 'alert' no navegador, apresenta um bug.
 
 ---------------------FIM---------------------
