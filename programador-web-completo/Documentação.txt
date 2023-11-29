@@ -110,3 +110,5 @@ onload - Disparado quando a página terminou de ser carregada. Body
 onresize - Disparado quando há um redimencionamento da janela
 
 ***Paramos com 12:09 de aula**
+
+---------------------FIM---------------------
