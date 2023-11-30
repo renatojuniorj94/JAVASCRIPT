@@ -112,3 +112,19 @@ onresize - Disparado quando há um redimencionamento da janela
 No evento 'onfocus' ao tentar emitir um 'alert' no navegador, apresenta um bug.
 
 ---------------------FIM---------------------
+
+Aula 11 - Array(Matrizes)
+
+Objetos usamos {}
+Matrizes usamos []
+
+Maneiras de criar array:
+
+var lista = ["arroz", "feijão", "macarrão"]
+--------------------------------------
+var lista = []
+lista[0] = "Arroz"
+lista[1] = "Feijão"
+lista[2] = "Macarrão"
+--------------------------------------
+var lista = new Array("Arroz","Feijão","Macarrão")
