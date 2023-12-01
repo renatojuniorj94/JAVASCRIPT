@@ -128,3 +128,11 @@ lista[1] = "Feijão"
 lista[2] = "Macarrão"
 --------------------------------------
 var lista = new Array("Arroz","Feijão","Macarrão")
+
+Para saber se é um Array (True or false):
+alert(Array.isArray(lista))
+
+------------------------FIM-------------------------
+
+Aula 12 - Métodos para arrays(Matrizes)
+
