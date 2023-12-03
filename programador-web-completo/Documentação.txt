@@ -113,7 +113,7 @@ No evento 'onfocus' ao tentar emitir um 'alert' no navegador, apresenta um bug.
 
 ---------------------FIM---------------------
 
-Aula 11 - Array(Matrizes)
+Aula 11/12 - Array(Matrizes)
 
 Objetos usamos {}
 Matrizes usamos []
@@ -128,12 +128,20 @@ lista[1] = "Feijão"
 lista[2] = "Macarrão"
 --------------------------------------
 var lista = new Array("Arroz","Feijão","Macarrão")
+--------------------------------------
 
 Para saber se é um Array (True or false):
 alert(Array.isArray(lista))
 
+Substituindo um item dentro do Array:
+const lista = ["arroz","feijão","macarrão","leite"]
+lista[0] = "café" > Aqui trocamos o item 0. Substituimos "arroz" por "café"
+alert(lista[0])
+
+Para ver todos os itens de uma Array:
+console.log(lista)
+
+
+
+
 ------------------------FIM-------------------------
-
-Aula 12 - Métodos para arrays(Matrizes)
-
----------------------FIM----------------------------
