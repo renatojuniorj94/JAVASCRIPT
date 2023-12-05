@@ -141,7 +141,4 @@ alert(lista[0])
 Para ver todos os itens de uma Array:
 console.log(lista)
 
-
-
-
 ------------------------FIM-------------------------
