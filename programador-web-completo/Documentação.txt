@@ -45,6 +45,7 @@ Não pode começar com número, conter espaços e símbolos ou palavras reservad
 ------------------FIM--------------------
 
 Aula 7 - Operadores
+https://www.w3schools.com/js/js_operators.asp
 
 + - * / = ++ -- += -= && || etc...
 
@@ -92,6 +93,7 @@ Geralmente em objetos, usamos a variável "const".
 ------------------FIM---------------------
 
 Aula 10 - Eventos
+https://www.w3schools.com/js/js_events.asp
 
 onclick - Disparado quando recebe um click
 ondblckick - Disparado com clique duplo
@@ -114,6 +116,8 @@ No evento 'onfocus' ao tentar emitir um 'alert' no navegador, apresenta um bug.
 ---------------------FIM---------------------
 
 Aula 11/12 - Array(Matrizes)
+https://www.w3schools.com/js/js_arrays.asp
+https://www.w3schools.com/js/js_array_methods.asp
 
 Objetos usamos {}
 Matrizes usamos []
@@ -148,11 +152,16 @@ Aula 12 - Métodos para Arrays(Matrizes)
 -----------------------FIM-----------------------
 
 Aula 13 - If e Else (Condições)
+https://www.w3schools.com/js/js_if_else.asp
 
 ----------------FIM-----------------
 
 Aula 14 - Switch
+https://www.w3schools.com/js/js_switch.asp
 
 -------------------FIM---------------------
 
 Aula 15 - Laços de repetição
+https://www.w3schools.com/js/js_loop_for.asp
+
+---------------------FIM----------------------
