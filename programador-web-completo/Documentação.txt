@@ -184,6 +184,7 @@ setInterval(function, milisegundos)
 -----------------------FIM-----------------------
 
 Aula 17 - Classes
+https://www.w3schools.com/js/js_class_intro.asp
 
 Classes em JavaScript
 
@@ -194,3 +195,7 @@ Basicamente, as classes são como fábricas para criar objetos. Pode se dizer qu
 Assim como uma fábrica da vida real precisa das máquinas para construir os objetos, as classes em JavaScript usam um método chamado constructor() para fabricar os objetos.
 
 ----------------------FIM--------------------
+
+Aula 18 - Manipulação de datas
+https://codepen.io/genial-cursos/pen/poWObMq
+
