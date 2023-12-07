@@ -165,3 +165,18 @@ Aula 15 - Laços de repetição
 https://www.w3schools.com/js/js_loop_for.asp
 
 ---------------------FIM----------------------
+
+Aula 16 - SetTimeout e SetInterval
+https://www.w3schools.com/js/js_timing.asp
+
+Eventos de tempo com JavaScript
+
+Os eventos de tempo permitem a execução do código em intervalos de tempo especificados. Esses intervalos de tempo são chamados de eventos de cronometragem.
+
+Os dois métodos-chave para usar com JavaScript são:
+
+setTimeout(function, tempo em milisegundos)
+> É o mesmo que setTimeout(), mas repete a execução da função continuamente.
+
+setInterval(function, milisegundos)
+> É o mesmo que setTimeout(), mas repete a execução da função continuamente.
