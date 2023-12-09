@@ -200,3 +200,17 @@ Aula 18 - Manipulação de datas
 https://codepen.io/genial-cursos/pen/poWObMq
 
 -------------------FIM----------------------
+
+Aula 19 - JSON
+https://www.w3schools.com/js/js_json_intro.asp
+
+Explicando de um modo simples JSON é basicamente uma forma de converter um objeto em texto e o contrário também, um texto em um objeto.
+
+Ele é usado principalmente para transmitir dados entre sistemas de forma simples, já que o formato de texto é lido por praticamente toda linguagem de programação.
+
+Para trabalhar com JSON no JavaScript usamos dois métodos:
+
+JSON.pase() > Converte texto no padrão JSON em objetos.
+JSON.stringify() > Converte objetos em texto padrão JSON.
+
+------------------------FIM------------------------
