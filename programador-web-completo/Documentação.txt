@@ -214,4 +214,4 @@ JSON.pase() > Converte texto no padrão JSON em objetos.
 JSON.stringify() > Converte objetos em texto padrão JSON.
 
 ***PARAMOS A AULA COM 08:03***
-------------------------FIM------------------------
+-----------------------FIM-----------------------
