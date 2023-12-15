@@ -1,0 +1,119 @@
+/* Reset e estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+input {
+    height: 120px;
+    font-size: 1.5em;
+    width: 80%;
+    padding-left: 10px;
+}
+
+button.add {
+    width: 20%;
+    height: 120px;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* Estilos para a lista de tarefas */
+main {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.item-clicado {
+    background: rgba(196, 255, 196, 0.753);
+}
+
+.item-icone {
+    flex: 10%;
+    text-align: center;
+}
+
+.item-icone .material-icons {
+    color: black;
+}
+
+.item-icone-clicado .material-icons {
+    color: green;
+}
+
+.item-nome {
+    font-size: 20px;
+    font-weight: bold;
+    flex: 70%;
+}
+
+.item-nome input {
+    border: none;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: inherit;
+    color: inherit;
+}
+
+.item-nome input.clicado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-botao {
+    flex: 20%;
+}
+
+.delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.material-icons.verde {
+    color: green;
+}
