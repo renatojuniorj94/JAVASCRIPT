@@ -19,15 +19,18 @@ header {
     flex-flow: row wrap;
     align-items: center;
     width: 90%;
-    /*border: 1px solid red;*/    
+    /*border: 1px solid red;*/
     margin: auto;
 }
 
 input {
-    height: 120px; /* altura */
+    height: 120px;
+    /* altura */
     font-size: 1.5em;
-    width: 80%; /* largura */
-    padding-left: 10px; /* distancia borda esquerda */
+    width: 80%;
+    /* largura */
+    padding-left: 10px;
+    /* distancia borda esquerda */
 }
 
 button.add {
@@ -47,7 +50,7 @@ main {
     width: 90%;
     margin: auto;
     /* border: 1px solid blue; */
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 .item {
@@ -74,7 +77,7 @@ main {
     background: rgba(196, 255, 196, 0.753);
 }
 
-.item-icone { 
+.item-icone {
     text-align: center;
     flex: 5%;
     /* border: 1px solid orangered; */
@@ -105,25 +108,29 @@ main {
     padding: 5%;
 }
 
-.item-botao { 
+.item-botao {
     flex: 15%;
-    /* border: 1px solid orangered; */ 
+    /* border: 1px solid orangered; */
     height: 100%;
 }
 
 .item-botao-clicado {
     flex: 15%;
-    /* border: 1px solid orangered; */ 
+    /* border: 1px solid orangered; */
     height: 100%;
 }
 
-.delete{
+.delete {
+    position: static;
     background: red;
     color: white;
     border: none;
     padding: 10px;
     height: 80px;
     width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .item-clicado .item-nome-clicado {
