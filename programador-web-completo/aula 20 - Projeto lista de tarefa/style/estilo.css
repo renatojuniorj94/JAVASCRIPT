@@ -47,7 +47,7 @@ button.add {
 
 main {
     display: flex;
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
     width: 90%;
     margin: auto;
     /* border: 1px solid blue; */
