@@ -55,7 +55,7 @@ var s = n1 + n2
 window.alert('O valor da soma é ' + s)
     > Number.parseInt > Forçamos a conversão de uma string em um número inteiro.
     > Number.parseFloat > Forçamos a conversão de uma string em um número flutuante (Ex: 5.3).
-    > Se usarmos somente 'Number' ele soma automaticamente números inteiros(Int) e flutuante (Float)
+    > Se usarmos somente 'Number' ele soma automaticamente números inteiros(Int) e flutuante (Float).
     Para converter um número(Number) em String basta colocar > String(n) ou n.toString()
 
 window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
