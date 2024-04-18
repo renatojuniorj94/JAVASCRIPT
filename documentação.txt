@@ -1,0 +1,391 @@
+Aula 04 -
+
+window = abre uma janela ao carregar o site
+
+.alert() = emite um alerta ao carregar o site.
+
+.confirm() = da a opção de confirmar (ok) ou cancelar.
+
+.prompt() = Aparece um campo para inserir dados.
+
+Inserindo comentários:
+
+// = Comentários na mesma linha
+
+/* */ = Comentários em mais de uma linha.
+-------------------------
+
+Aula 05 - Variável
+
+Sinal de igual '=' quer dizer 'recebe'
+
+variável > var
+    Exemplo:
+    var n1 = 5
+    var n2 = 8.5
+    var n3 = 15
+
+Podemos usar "" e '' e ``
+
+n1, n2 e n3, são identificadores. Podem começar com letra, $ ou _
+Não podem começar com números, conter espaços e usar palavras reservadas (palavras usadas para comandos como : function, var, alert...)
+
+
+Variáveis servem para guardar dados. Number(números), string(cadeia de caracteres, como nome, telefone, cpf...) e boolean (True(verdadeiro) or False(falso))
+
+O comando 'typeof' mostra o tipo de variável.
+----------------FIM-----------------
+
+Aula 06 - Tratamento de dados
+
+ex002---
+var nome = window.prompt('Qual é o seu nome?')
+    (var nome > guarda o nome que será escrito.)
+
+window.alert ('É um grande prazer te conhecer, ' + nome + '!')
+    +  > é o que chamamos de concatenação (concatenação é quando juntamos strings.)
+
+fim ex002---
+
+ex003---
+var n1 = window.prompt('Digite um número: ')
+    > O número digitado é uma string.
+var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+var s = n1 + n2
+window.alert('O valor da soma é ' + s)
+    > Number.parseInt > Forçamos a conversão de uma string em um número inteiro.
+    > Number.parseFloat > Forçamos a conversão de uma string em um número flutuante (Ex: 5.3).
+    > Se usarmos somente 'Number' ele soma automaticamente números inteiros(Int) e flutuante (Float).
+    Para converter um número(Number) em String basta colocar > String(n) ou n.toString()
+
+window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    Ao usar placeholder ${} temos que usar crase (``)
+
+fim ex003---
+
+ex004---
+.length > conta quantos caracteres tem uma String
+.toUpperCase() > transforma toda a String em letras maiúsculas.
+.toLowerCase() > transforma toda a String em letras minúsculas.
+
+.toFixed(2) > nesse caso colocamos a variável terminando com duas casas decimais > 1545.5 vai terminar 1545.50
+Se quisermos trocar '.' por ',' colocamos > .replace('.',',')
+Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos o seguinte comando > .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ou usd/euro.
+
+-----------------FIM------------------
+
+Aula 07/08 - Operadores
+
+Os operadores que vamos estudar são (A ordem já indica a hierarquia dos operadores):
+- Aritméticos
+    + Soma
+    - Subtração
+    * Multiplicação
+    / Divisão
+    % Resto da divisão inteira (Exemplo: 5 dividido por 2. O resultado é 2 e sobra 1 na divisão inteira)
+    ** Potência (Exemplo: 5 ** 2 = 25)
+
+Ordens de precedência dos operadores 
+aritméticos:
+    ()
+    **
+    * / %
+    + -
+
+- Atribuição
+    Simplificando atribuições:
+    Antes > var n = 3
+            n = n + 3
+            6
+    Depois > n += 3
+            
+            
+- Relacionais (Não possui hierarquia)
+    Os operadores relacionais retornam resultados booleanos (True or False). Quando houver operadores relacionais e aritméticos na mesma linha, pela hierarquia, os artméticos vem primeiro.
+    > Maior
+    < Menor
+    >= Maior/igual
+    <= Menor/igual
+    == Igual
+    === Idêntico (Mesmo valor e mesmo tipo (String, Number))
+    != Diferente
+
+- Lógicos (Possui hierarquia)
+    ! Negação
+        ! true
+            false
+        ! false
+            true
+
+    && Conjunção
+        true && true
+        true
+        false && false
+        false
+        false && true
+        false
+        true && false
+        false
+
+    || Disjunção
+        true || true
+        true
+        false || false
+        false
+        false || true
+        true
+        true || false
+        
+        Exemplo no node.js :
+        > var idade = 20
+        undefined
+        > var estado = 'mg'
+        undefined
+        > var salario = 5000
+        undefined
+        > var sexo = 'f'
+        undefined
+        >
+        > idade >=15 && idade <=17
+        false
+        > estado == 'rj'|| estado == 'sp'
+        false
+        > salario > 2000 && sexo != 'm'
+        true
+        >
+
+- Ternário
+    ?
+    :
+
+    Exemplo:
+    var media = 5
+    média >= 7.0 ? "aprovado" : "reprovado"
+    > "reprovado" 
+----------------FIM-------------------
+
+Aula 09 - DOM (Document Object Model)
+
+Árvore hierárquica DOM (Parent & Child):
+window >(parent)
+    - location (child window) - Diz qual a localização do site, url, página atual e anterior.
+    - Document > (child ...)
+        HTML (Child document) > (parent Head e Body)
+            - Head
+                - Meta
+                - Title
+            - Body
+                - H1
+                - P
+                - P
+                    - Strong
+                - DIV    
+    - History (child ...) - Guarda o historico do site.
+
+    Todos acima, são elementos. Podemos selecionar esse elementos por:
+    - Marca (TagName)
+        getElementsByTagName()
+    - ID
+        getElementById()
+    - Nome
+        getElementsByName()
+    - Classe
+        getElementsByClassName()
+    - Seletor (método mais recente)
+        querySelector()
+        querySelectorAll()
+
+---------------FIM----------------
+
+Aula 10 - Eventos DOM
+
+Exemplo de eventos com uma DIV:
+
+mouseenter - Ao entrar no campo da DIV
+mousemove - Mover o mouse dentro do campo da DIV
+mousedown - Dar um clique e segurar, dentro do campo da DIV
+mouseup - Soltar o clique dentro da DIV
+click - Dar um clique normal dentro do campo da DIV
+mouseout - Tirar o mouse do campo da DIV
+
+Outros eventos:
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+Determinadas funções (function) vão acontecer quando executarmos um bloco de código. Um bloco de código fica entre {}
+
+---------------FIM-----------------
+
+Aula 11/12 - Condições (parte 1/2)
+
+-If (Se...) - Somente If é uma condição simples
+-Else (Se não...) - If > Else é um condição composta
+
+Estrutura:
+if {
+
+} else{
+
+}
+
+Condição múltipla:
+switch (expressão) {
+    case valor 1:
+    break (break é obrigatorio, exceto em default)
+    case valor 2:
+    break
+    case valor 3:
+    break
+
+    default:
+}
+
+---------------FIM--------------------
+
+Aula 13/14 - Repetições (parte 1/2)
+
+while > Estrutura de repetição com teste lógico no início
+
+do > Estrura de repetição com teste lógico no final
+
+for > Estrutura de repetição com variável de controle
+
+No final da aula aprendemos a usar o console de depuração. Link da aula:
+https://www.youtube.com/watch?v=eX-lkN_Zahc&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=24
+
+----------------FIM-----------------
+
+Aula 15 - Variáveis compostas (array = vetor)
+
+Variáveis simples só conseguem armazenar um valor por vez.
+Ex: Se uma variável tinha o valor de 5 e depois você atribuiu 8, ela perder o valor de anterior.
+
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura.
+Ex: Diferente do exemplo acima, ela consegue guardar diversos valores.
+
+Array (vetor) é uma variável com varios espaços, e é composto por elementos que, possuí índices/chaves (números identificadores). Dentro do elemento ficam os conteúdos/valores.
+
+Array > Elementos > Índices/chaves > Conteúdos/valores.
+
+link da aula:
+https://www.youtube.com/watch?v=XdkW62tkAgU&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=29
+
+----------------------FIM--------------------
+
+Aula 16 - funções
+
+Link da aula:
+https://www.youtube.com/watch?v=mc3TKp2XzhI&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=30
+
+------------------FIM-----------------
+
+Aula 17 - Encerramento
+
+Aprendizado no curso básico de JavaScript:
+
+-Fundamentos
+-Variáveis e dados
+-Operadores
+-Condições
+-Repetições
+-Arrays
+-Functions
+-DOM
+
+Proxímos passos:
+- Continuar estudando Functions
+-Objetos (POO)
+-Modularização
+-RegEx (Expressões regulares)
+-JSON
+-Ajax
+-NodeJS
+-
+
+Claro, vou explicar cada linha do código que você compartilhou:
+
+```javascript
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+```
+
+1. `let num = document.querySelector('input#fnum')`: Isso procura um elemento HTML com o ID `fnum` que é um input e o armazena na variável `num`.
+2. `let lista = document.querySelector('select#flista')`: Isso procura um elemento HTML com o ID `flista` que é um select e o armazena na variável `lista`.
+3. `let res = document.querySelector('div#res')`: Isso procura um elemento HTML com o ID `res` que é uma div e o armazena na variável `res`.
+4. `let valores = []`: Isso cria um array vazio chamado `valores`, que será usado posteriormente para armazenar valores.
+
+```javascript
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
+    }
+}
+```
+
+1. `function isNumero(n) { ... }`: Esta é a definição de uma função chamada `isNumero` que recebe um parâmetro `n`.
+2. `if (Number(n) >= 1 && Number(n) <= 100) { return true } else { return false }`: Esta função verifica se o número recebido (`n`) é maior ou igual a 1 e menor ou igual a 100. Se for, retorna `true`; caso contrário, retorna `false`.
+
+```javascript
+function isLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+```
+
+1. `function isLista(n, l) { ... }`: Esta é a definição de uma função chamada `isLista` que recebe dois parâmetros: `n` (um número) e `l` (uma lista).
+2. `if (l.indexOf(Number(n)) != -1) { return true } else { return false }`: Esta função verifica se o número `n` está presente na lista `l`. Se estiver, retorna `true`; caso contrário, retorna `false`.
+
+```javascript
+function adicionar() {
+    if (isNumero(num.value) && !isLista(num.value, valores)) {
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
+    } else {
+        window.alert('Valor inválido ou já encontrado na lista.')
+    }
+    num.value = ''
+    num.focus()
+}
+```
+
+1. `function adicionar() { ... }`: Esta função é executada quando alguma ação (como um clique em um botão) acontece.
+2. `if (isNumero(num.value) && !isLista(num.value, valores)) { ... } else { ... }`: Verifica se o valor do input (`num.value`) é um número válido (usando a função `isNumero`) e se não está na lista (`valores`) usando a função `isLista`. Se for um número válido e não estiver na lista, ele adiciona o valor à lista `valores` e cria um novo elemento `option` no elemento `select` (`lista`).
+3. Se o valor não for válido ou já estiver na lista, exibe um alerta.
+4. `num.value = ''`: Limpa o valor do input.
+5. `num.focus()`: Coloca o foco de volta no input para facilitar a inserção de novos valores.
+
+Código explicado linha a linha pelo chatGPT (Ex018 - aula 16)
+
+-----------------------------------------------------
+
+Claro, vamos analisar linha por linha:
+
+1. `let num = document.querySelector('input#fnum')`: Esta linha seleciona um elemento HTML usando `document.querySelector`. Procura um elemento `input` com o ID `fnum` e armazena-o na variável `num`.
+   
+2. `let lista = document.querySelector('select#flista')`: Similar à linha anterior, essa linha seleciona um elemento HTML, mas desta vez procura um elemento `select` com o ID `flista` e o armazena na variável `lista`.
+
+3. `let res = document.querySelector('div#res')`: Novamente, seleciona um elemento HTML, buscando uma `div` com o ID `res` e armazenando-o na variável `res`.
+
+4. `let valores = []`: Aqui é criado um array vazio chamado `valores`. Esse array será usado para armazenar números posteriormente.
+
+Agora, passando para as funções:
+
+5. `function isNumero(n) { ... }`: Esta função chamada `isNumero` recebe um argumento `n`. Ela verifica se o valor `n` é um número entre 1 e 100, retornando `true` se for e `false` caso contrário.
+
+6. `function isLista(n, l) { ... }`: Essa função `isLista` verifica se um número `n` já está presente em uma lista `l`. Ela usa `l.indexOf(Number(n))` para verificar se o número está na lista. Retorna `true` se o número estiver na lista e `false` caso contrário.
+
+Agora, as funções `adicionar` e `finalizar`:
+
+7. `function adicionar() { ... }`: Esta função é chamada quando um evento ocorre (por exemplo, um clique em um botão). Ela verifica se o número no input (`num.value`) é válido e não está na lista `valores`, e o adiciona à lista de valores e ao elemento `select` (`lista`). Caso contrário, exibe um alerta e limpa o input, focando nele novamente para uma nova entrada.
+
+8. `function finalizar() { ... }`: Esta função é acionada quando um evento (provavelmente um clique em um botão "Finalizar") ocorre. Ela realiza cálculos estatísticos com os valores armazenados em `valores`, como o total de números, o maior, o menor, a soma e a média. Em seguida, atualiza o conteúdo da div `res` com esses cálculos para exibição na página.
+
+Essencialmente, esse código é um sistema simples para adicionar números a uma lista e, ao finalizar, calcular algumas estatísticas básicas sobre esses números.
