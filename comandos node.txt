@@ -1,2 +1,2 @@
 .exit = fechar node
-ctrl + l = limpar tela
+ctrl + l = limpar tela.
