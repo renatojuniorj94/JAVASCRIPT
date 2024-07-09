@@ -26,11 +26,11 @@
         //.toFixed(2) > nesse caso colocamos a variável terminando com duas casas decimais > 1545.5 vai terminar 1545.50
         var n1 = 1545.5
         var n2 = 1250.5
-        document.write(`A variável n1(1545.5) com duas casas decimais fica com ${n1.toFixed(2)} <br>`)
-        /* Se quisermos trocar '.' por ',' colocamos >
+        document.write(`A variável n1(1545.5) com duas casas decimais fica com ${n1.toFixed(2)}<br>`)
+        
+       document.write(`Trocando ponto por vírgula (${n2.toFixed(5).replace('.',',')}) <br>`)/* Se quisermos trocar '.' por ',' colocamos >
         .replace('.',',')
         */
-       document.write(`Trocando ponto por vírgula (${n2.toFixed(3).replace('.',',')}) <br>`)
 
        /*
        Se quisermos transformar em real, dólar, euro, ou qualquer outra moeda, usamos o seguinte comando>
