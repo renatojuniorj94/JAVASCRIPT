@@ -1,12 +1,15 @@
-/* Estrutura de repetição com teste lógico no início
+//Estrutura de repetição com teste lógico no início
 var c = 1
 while (c <= 10) {
     console.log(`Passo ${c}`)
     c++ // c = c + 1
-} */
+}
 
-var c = 1 //Estrura de repetição com teste lógico no final
+console.log()
+
+//Estrura de repetição com teste lógico no final
+var c = 1 
 do {
     console.log(`Passo ${c}`)
     c++
-} while (c <= 10) 
+} while (c <= 10)
