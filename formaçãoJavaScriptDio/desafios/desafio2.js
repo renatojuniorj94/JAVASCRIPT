@@ -27,3 +27,5 @@ if (combustivelUsado === "gasolina") {
 }
 
 console.log(`O total gasto na viagem foi R$ ${res.toFixed(2).replace(".", ",")}`)
+
+//fim
